@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>下拉菜单--属性声明式方法（一）</title>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="89-alert-1.css">
+</head>
+<body>
+<h3>示例1</h3>
+<div class="navbar navbar-default" id="navmenu">
+    <a href="##" class="navbar-brand">W3cplus</a>
+    <ul class="nav navbar-nav">
+    	<li class="dropdown">
+			<a href="##" data-toggle="dropdown" class="dropdown-toggle" role="button" id="tutorial">教程<b class="caret"></b></a>
+			<ul class="dropdown-menu" role="menu" aria-labelledby="tutorial">
+				<li role="presentation"><a href="##">CSS3</a></li>
+				<li role="presentation"><a href="##">HTML5</a></li>
+				<li role="presentation"><a href="##">Sass</a></li>
+			</ul>
+		</li>
+		<li><a href="##">前端论坛</a></li>
+		<li><a href="##">关于我们</a></li>
+	</ul>
+</div>
+
+<h3>示例2</h3>
+<ul class="nav nav-pills">
+	<li class="dropdown">
+		<a href="##" class="dropdown-toggle" role="button" id="tutorial">教程<b class="caret"></b></a>
+		<ul class="dropdown-menu" role="menu" aria-labelledby="tutorial">
+			<li role="presentation"><a href="##">CSS3</a></li>
+			<li role="presentation"><a href="##">HTML5</a></li>
+			<li role="presentation"><a href="##">Sass</a></li>
+		</ul>
+	</li>
+	<li class="active"><a href="##">前端论坛</a></li>
+	<li><a href="##">关于我们</a></li>
+</ul>
+<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+<script src="http://cdn.bootcss.com/bootstrap/2.3.1/js/bootstrap-dropdown.js"></script>
+</body>
+</html>
+
+<!-- 用户只需要点击有向下三角形的按钮链接或者直接点击三角形就会弹出下拉菜单。实现这个效果，都是依赖于HTML相关元素自定义的属性完成。所以在编写HTML结构的时候必须满足下面的规则：
+
+  ☑ 按照制作菜单的结构编写结构，如前面“下拉菜单”一节(5-21)所介绍
+
+  ☑ 被点击的菜单项链接或按钮需要添加自定义属性 data-toggle="dropdown" 
+
+实现下拉菜单原理：
+
+Dropdown插件加载时，对所有带有“data-toggle=dropdown”样式的元素绑定了事件，用户单击带有“data-toggle=dropdown”样式的链接或按钮时， 会触发JavaScript事件代码。当用户点击带有“data-toggle=dropdown”样式的链接或按钮时，下拉菜单的父容器（上面的示例是 “<li class="dropdown">”）会添加一个open类名，此时下拉菜单显示；再次单击时，JavaScript会删除刚添加的open类 名，此时下拉菜单将隐藏。
+  -->

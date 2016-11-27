@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>标签形(tab)导航</title>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="62-style.css">
+</head>
+<body>
+<ul class="nav nav-tabs">
+    <li><a href="##">Home</a></li>
+ 	<li><a href="##">CSS3</a></li>
+ 	<li><a href="##">Sass</a></li>
+ 	<li><a href="##">jQuery</a></li>
+ 	<li><a href="##">Responsive</a></li>
+</ul>
+<br />
+<ul class="nav nav-tabs">
+    <li class="active"><a href="##">Home</a></li>
+ 	<li><a href="##">CSS3</a></li>
+ 	<li><a href="##">Sass</a></li>
+ 	<li><a href="##">jQuery</a></li>
+ 	<li><a href="##">Responsive</a></li>
+</ul>
+<br />
+ <ul class="nav nav-tabs">
+    <li><a href="##">Home</a></li>
+ 	<li class="active"><a href="##">CSS3</a></li>
+ 	<li><a href="##">Sass</a></li>
+ 	<li><a href="##">jQuery</a></li>
+ 	<li class="disabled"><a href="##">Responsive</a></li>
+ </ul>
+ <br>
+ <br>
+ <h4>以下为任务部分</h4>
+ <ul class="nav nav-tabs">
+ 	<li class="active"><a href="##">商品介绍</a></li>
+ 	<li><a href="##">规格参数</a></li>
+ 	<li><a href="##">商品评价</a></li>
+ 	<li><a href="##">售后保证</a></li>
+ </ul>
+  <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> 
+</body>
+</html>
+
+<!-- 导航对于一位前端人员来说并不陌生。可以说导航是一个网站重要的元素组件之一，可以便于用户查找网站所提供的各项功能服务。导航的制作方法也是千奇百怪，五花八门。在这一节中将向大家介绍如何使用Bootstrap框架制作各式各样的导航。在Bootstrap框架将导航独立出来成为一个导航组件.
+
+1. 导航基础样式: Bootstrap框架中制作导航条主要通过“.nav”样式。默认的“.nav”样式不提供默认的导航样式，必须附加另外一个样式才会有效，比如“nav-tabs”、“nav-pills”之类。比如右侧代码编辑器中就有一个tab导航条的例子，他的实现方法就是为ul标签加入.nav和nav-tabs两个类样式。
+
+2. 标签形导航，也称为选项卡导航。特别是在很多内容分块显示的时，使用这种选项卡来分组十分适合。
+
+3. 标签形导航是通过“nav-tabs”样式来实现。在制作标签形导航时需要在原导航“nav”上追加此类名
+
+4. 实现原理非常的简单，将菜单项（li）按块显示，并且让他们在同一水平上排列，然后定义非高亮菜单的样式和鼠标悬浮效果。
+
+5. 其实上例的效果和我们平时看到的选项卡效果并不一致。一般情况之下，选项卡教会有一个当前选中项。其实在Bootstrap框架也相应提供了。假设我们想让“Home”项为当前选中项，只需要在其标签上添加类名“class="active"”即可
+
+6. 除了当前项之外，有的选项卡还带有禁用状态，实现这样的效果，只需要在标签项上添加“class="disabled"”即可
+ -->

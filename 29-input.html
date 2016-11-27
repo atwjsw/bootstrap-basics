@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单控件——输入框input</title>
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+</head>
+<body>
+<form role="form">
+  <div class="form-group">
+    <input type="email" class="form-control" placeholder="Enter email">
+    <input type="text" class="form-control" placeholder="Enter username">
+  </div>
+</form>   
+</body>
+</html>
+
+<!-- 单行输入框，常见的文本输入框，也就是input的type属性值为text。在Bootstrap中使用input时也必须添加type类型，如果没有指定type类型，将无法得到正确的样式，因为Bootstrap框架都是通过input[type=“?”](其中?号代表type类型，比如说text类型，对应的是input[type=“text”])的形式来定义样式的。
+
+为了让控件在各种表单风格中样式不出错，需要添加类名“form-control” -->

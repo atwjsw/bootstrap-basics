@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>面包屑式导航</title>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="62-style.css">
+</head>
+
+<body>
+<!--代码-->
+<ol class="breadcrumb">
+  <li><a href="#">首页</a></li>
+  <li><a href="#">我的书</a></li>
+  <li class="active">《图解CSS3》</li>
+</ol>
+<br>
+ <br>
+ <h4>以下为任务部分</h4> 
+ <ol class="breadcrumb">
+  <li><a href="#">首页</a></li>
+  <li><a href="#">名师简介</a></li>
+  <li class="active">大漠</li>
+</ol>
+
+<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> 
+
+</body>
+</html>
+
+面包屑(Breadcrumb)一般用于导航，主要是起的作用是告诉用户现在所处页面的位置（当前位置）。在Bootstrap框架中面包屑也是一个独立模块组件; 使用方式就很简单，为ol加入breadcrumb类
